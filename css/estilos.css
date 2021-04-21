@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Seymour+One&display=swap'); /*Este es para la COCA prueba1*/
+
+@import url(menu.css);
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/*-------------Estilos Base-----------*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-menu{
+    
+    background: rgba(0,0,0,0.8);
+    padding: 5px;
+}
+
+.column {
+    width: 100%;
+    
+}
+
+.aumentar {
+    transition: all 500ms ease-out;
+}
+
+.aumentar:hover{
+    transform: scale(1.1);
+    transition: all 500ms ease-out;
+
+}
+
+/*--------------Estilos del header---------------*/
+
+
+
+.icon-leaf{
+    color: white;
+}
+
+.icon-menu{
+    color: white;
+}
+
+.idioms {
+    position: absolute;
+    margin-top: 70px;
+    width: 100px;
+    height: auto;
+    
+}
+.icon-idiom {
+    background: white;
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*----------------------Estilos de banner------------------*/
+
+
+.banner {
+    position: relative;
+    box-shadow: 0px 10px 50px;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 5px;
+    z-index: -100;
+}
+
+
+
+.banner__img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 90%;
+    color:white;
+    text-align: ;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.banner__content h6{
+    font-size: 13px;;
+}
+
+.banner__content h1{
+    font-size: 80px;
+    color: yellow;
+    font-family: 'Fredericka the Great', cursive
+    
+    
+}
+
+.banner__content h2{
+    margin-top: 40px;
+    font-size: 15px;
+    background: rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+
+
+
+
+.group--color .container {
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0px 10px 40px rgba(0,0,0,1);
+    color: white;
+    padding: 0;
+    text-align: center
+    
+}
+
+
+.main__tittle {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'monserat', sans-serif;
+    font-weight: 100;
+}
+
+
+.column__title {
+    font-size: 1.3em;
+    
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+.main__about__description .column:nth-child(1) {
+}
+.main__about__description .column:nth-child(1) img {
+        border-radius: 50%;
+
+}
+
+.main__about__description {
+    margin: 20px;
+}
+
+
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 120px;
+    background: #DE423A;
+    padding: 10px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: white;
+}
+
+
+.group__title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;   
+    font-size: 1.8em;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.today-special {
+    margin-bottom: 20px;
+}
+
+.today-special .column {
+    margin-bottom: 30px;
+}
+
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+}
+
+.today-special__price {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.today-special__tittle {
+    font-size: 1.2em;
+    color: #883F24;
+    font-weight: bold;
+}
+
+
+.group [class*="today-special"] {
+
+    padding: 10px;
+}
+
+/*-----------------Estilos del footer----------------*/
+
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: .8em;
+}
+
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative
+    top: 3;
+    right: 5px;
+}
+
+/*-----------------Estilos responsive----------------*/
+
+@media screen and (min-width:480px) {
+
+    .banner {
+        margin-top: -145px;
+        z-index: -1000;
+        height: 500px;
+
+    }
+    .banner__content {
+        margin-top: 60px;
+        font-size: 2em; 
+    }
+
+    .banner__img {
+        height: 500px;
+    }
+    
+
+    
+    
+    
+    .main {
+        padding-bottom: 15px;
+    }
+    
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-style: .9em;
+    }
+    
+    .main__about__description .btn {
+        margin: 0;
+    }
+    
+    .today-special .column {
+        border: 2px solid #ddd;
+        padding: 2px;
+        margin: 2px;
+        box-shadow: 0px 0.5px 20px rgba(0,0,0,0.5);
+        transition: all 300ms ease-out;
+    }
+    
+    .today-special__img {
+        height: 200px;
+        cursor: pointer;
+        object-fit: cover; 
+
+    }
+
+    
+    .today-special .column:hover{
+        transform: scale(1.1);
+        transition: all 500ms ease-out;
+        background: white;
+
+    }
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+    .column--50 {
+        width: 49%;
+    }
+    .column--50-25 {
+        width: 49%;
+    }
+
+    .banner{
+        height: 500px;
+    }
+    
+    .banner__img {
+        height: 500px;
+    }
+    
+    .group--color .container {
+    padding: 20px;
+    }
+    
+    
+}
+
+@media screen and (min-width:768px) {
+    
+    .banner__img {
+        height: 600px;
+    }
+    
+    .banner{
+        height: 600px;
+    }
+    .main__title {
+        font-size: 2.2em;
+    }
+    .main__about__description {
+        margin-top: 30px;
+    }
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    
+    .column__txt {
+        line-height: 30px;
+    }
+    
+    .column--50-25 {
+        24%
+    }
+    
+    .column_title {
+        font-size: 1em;
+    }
+    .group__title {
+        font-size: 2.2em;
+    }
+    
+    .column--33 {
+        width: 32%;    
+    }
+    
+    .banner__content h6{
+    font-size: 15px;
+    width: 70%;
+    }
+
+    .banner__content h1{
+    font-size: 110px;
+    color: yellow;
+    font-family: 'Fredericka the Great', cursive
+    
+    
+    }
+    .banner__content h2{
+    margin-top: 40px;
+    font-size: 25px;
+    }
+
+    
+.idioms {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 70px;
+    height: auto;
+    
+}
+
+    
+    
+    
+}
+
+@media screen and (min-width:1024px) {
+    
+    .container {
+        width: 1000px;
+    } 
+
+    .banner{
+        height: 800px;
+    }
+    .banner__img {
+        height: 800px;
+    }
+    .banner__content {
+        font-size: 2.5em;
+    }
+
+    .group--color .container {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    
+    .menu{
+        width: 30%;
+    }
+    
+    .main__title{
+        font-size: 2.3em;
+    }
+    
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 45px;
+    }
+    
+    .today-special__title{
+        font-size: 1.2em;
+    }
+    
+    .today-special__price{
+        font-size: 1em;
+    }
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+        .column--33 {
+        width: 32%;    
+    }
+    
+        .banner__content h6{
+    font-size: 17px;
+    width: 35%;
+    }
+
+    .banner__content h1{
+    font-size: 110px;
+    color: yellow;
+    font-family: 'Fredericka the Great', cursive
+    
+    
+    }
+    .banner__content h2{
+    margin-top: 40px;
+    font-size: 25px;
+    text-align: center;
+    }
+    
+    
+}
+
+@media screen and (min-width:1600px) {
+    .container{
+        width: 1400px;
+    }
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .today-special__img {
+        height: 300px;
+    }
+    
+    .menu{
+        width: 30%;
+    }
+    .banner__img {
+        height: 500px;
+    }
+}
